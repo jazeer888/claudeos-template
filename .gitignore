@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+node_modules/
+*.log
+
+# Common places real secrets end up if you're not careful — uncomment/extend as needed
+# .env
+# **/credentials*
+# **/*secret*
