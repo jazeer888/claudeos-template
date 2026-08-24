@@ -85,6 +85,23 @@ to every scope you add.
 3. Checks the positioning framework from `gtm/positioning.md`
 4. Answers with real context — no copy-pasting, no re-explaining
 
+**A more everyday example — asking for a review:**
+
+**You:** "For YourProduct, review this — I changed how the retry logic works
+in the payments service"
+
+**Behind the scenes:**
+1. Claude reads `products/YourProduct/CLAUDE.md` and the relevant ADRs in
+   `architecture/decisions/`
+2. Reviews the change against decisions you've already made and documented —
+   not generic best practices
+3. Flags it only if it actually contradicts something you decided, and cites
+   which ADR
+
+Same pattern whether it's an engineer asking for a code review or a founder
+asking "does this still fit our positioning" — the answer comes from what's
+already in the repo, not a cold guess.
+
 **Filing new work follows the same pattern:** scope → type → file. A research
 finding goes in `<scope>/research/YYYY-MM-DD-topic.md`; a decision becomes an
 `ADR-000X-title.md`; a meeting note is always a new dated file. See
